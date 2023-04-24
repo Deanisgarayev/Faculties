@@ -43,12 +43,12 @@ public class Main {
         PrintService gryffindorStudents = new PrintService();
         gryffindorStudents.CompareGryffindors(gryffindors[0], gryffindors[1]);
         PrintService hufflepufStudents = new PrintService();
-        hufflepufStudents.CompareHufflepufs(hufflepufs[0], hufflepufs[1]);
+        hufflepufStudents.CompareHufflepufs(hufflepufs[0], hufflepufs[2]);
         PrintService ravenclawStudents = new PrintService();
-        ravenclawStudents.CompareRavenclaws(ravenclaws[0], ravenclaws[1]);
+        ravenclawStudents.CompareRavenclaws(ravenclaws[2], ravenclaws[1]);
         PrintService slytherinStudents = new PrintService();
-        slytherinStudents.CompareSlytherins(slytherins[0], slytherins[1]);
+        slytherinStudents.CompareSlytherins(slytherins[1], slytherins[2]);
         PrintService allStudents = new PrintService();
-        allStudents.compareAnyStudents();
+        allStudents.compareAnyStudents(gryffindors[0], slytherins[0]);
     }
 }
