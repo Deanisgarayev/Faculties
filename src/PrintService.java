@@ -5,8 +5,8 @@ public class PrintService {
 
     public void print(Gryffindor[] gryffindors) {
         System.out.println("Gryffindors");
-        for (Gryffindor gryffindor : gryffindors) {
-            System.out.println(gryffindor);
+        for (Gryffindor students : gryffindors) {
+            System.out.println(students);
         }
     }
 
@@ -30,10 +30,42 @@ public class PrintService {
             System.out.println(slytherin);
         }
     }
-
     public void CompareGryffindors(Gryffindor first, Gryffindor second) {
         var firstPoint = first.getBravery() + first.getHonor() + first.getNobility();
         var secondPoint = second.getBravery() + second.getHonor() + second.getBravery();
+        if (firstPoint > secondPoint) {
+            System.out.println(first.getName() + " better than " + second.getName());
+        } else if (firstPoint < secondPoint) {
+            System.out.println(second.getName() + " better than " + first.getName());
+        } else {
+            System.out.println(first.getName() + " & " + second.getName() + " are equals");
+        }
+    }
+    public void CompareHufflepufs(Hufflepuf first, Hufflepuf second) {
+        var firstPoint = first.getHardworking() + first.getLoyalty() + first.getDiligence();
+        var secondPoint = second.getHardworking() + second.getLoyalty() + second.getDiligence();
+        if (firstPoint > secondPoint) {
+            System.out.println(first.getName() + " better than " + second.getName());
+        } else if (firstPoint < secondPoint) {
+            System.out.println(second.getName() + " better than " + first.getName());
+        } else {
+            System.out.println(first.getName() + " & " + second.getName() + " are equals");
+        }
+    }    public void CompareRavenclaws(Ravenclaw first, Ravenclaw second) {
+        var firstPoint = first.getSmartness() + first.getWisdom() + first.getWit() + first.getCreativity();
+        var secondPoint = second.getSmartness() + second.getWisdom() + second.getWit() + first. getCreativity();
+        if (firstPoint > secondPoint) {
+            System.out.println(first.getName() + " better than " + second.getName());
+        } else if (firstPoint < secondPoint) {
+            System.out.println(second.getName() + " better than " + first.getName());
+        } else {
+            System.out.println(first.getName() + " & " + second.getName() + " are equals");
+        }
+    }    public void CompareSlytherins(Slytherin first, Slytherin second) {
+        var firstPoint = first.getCunning() + first.getDetermination() + first.getAmbition() +
+                first.getResourcefulness() + second.getDesireForPower();
+        var secondPoint = second.getCunning() + second.getDetermination() + second.getAmbition() +
+                first.getResourcefulness() + first.getDesireForPower();
         if (firstPoint > secondPoint) {
             System.out.println(first.getName() + " better than " + second.getName());
         } else if (firstPoint < secondPoint) {

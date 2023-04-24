@@ -32,7 +32,6 @@ public class Main {
                 new Slytherin("Gregory Goyle",17, 18,
                         3, 5, 2, 4, 5),
         };
-
         PrintService printService = new PrintService();
         printService.print(gryffindors);
         printService.space();
@@ -43,6 +42,12 @@ public class Main {
         printService.print(slytherins);
         PrintService gryffindorStudents = new PrintService();
         gryffindorStudents.CompareGryffindors(gryffindors[0], gryffindors[1]);
+        PrintService hufflepufStudents = new PrintService();
+        hufflepufStudents.CompareHufflepufs(hufflepufs[0], hufflepufs[1]);
+        PrintService ravenclawStudents = new PrintService();
+        ravenclawStudents.CompareRavenclaws(ravenclaws[0], ravenclaws[1]);
+        PrintService slytherinStudents = new PrintService();
+        slytherinStudents.CompareSlytherins(slytherins[0], slytherins[1]);
         PrintService allStudents = new PrintService();
         allStudents.compareAnyStudents();
     }
