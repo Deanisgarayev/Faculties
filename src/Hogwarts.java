@@ -1,64 +1,40 @@
 public class Hogwarts {
     private String name;
-    private String characteristic;
-    private int firstScore;
+    private int conjurePoint;
+    private int transgressDistance;
 
-    private int secondScore;
-    private int thirdScore;
 
-    public Hogwarts(String name, String characteristic, int firstScore, int secondScore, int thirdScore) {
+    public Hogwarts(String name, int conjurePoint, int transgressDistance ) {
         this.name = name;
-        this.characteristic = characteristic;
-        this.firstScore = firstScore;
-        this.secondScore = secondScore;
-        this.thirdScore = thirdScore;
+        this.conjurePoint = conjurePoint;
+        this.transgressDistance = transgressDistance;
     }
 
-    public int getFirstScore() {
-        return firstScore;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstScore(int firstScore) {
-        this.firstScore = firstScore;
+    public int getConjurePoint() {
+        return conjurePoint;
     }
 
-    public int getSecondScore() {
-        return secondScore;
-    }
-
-    public void setSecondScore(int secondScore) {
-        this.secondScore = secondScore;
-    }
-
-    public int getThirdScore() {
-        return thirdScore;
-    }
-
-    public void setThirdScore(int thirdScore) {
-        this.thirdScore = thirdScore;
+    public int getTransgressDistance() {
+        return transgressDistance;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setFirstCharacteristic(String characteristic) {
-        this.characteristic = characteristic;
+    public void setConjurePoint(int conjurePoint) {
+        this.conjurePoint = conjurePoint;
     }
-
-
-    public String getName() {
-        return name;
+    public void setTransgressDistance(int transgressDistance) {
+        this.transgressDistance = transgressDistance;
     }
-
-    public String getCharacteristic() {
-        return characteristic;
-    }
-
 
     @Override
     public String toString() {
-        return  name + "; присущий качества " + characteristic +  "; баллы: благородство " + firstScore + " честь " +
-                 secondScore + " храбрость " +  thirdScore;
+        return "name " + name + "; conjurePoint " + conjurePoint +  " transgressDistance " + transgressDistance;
     }
 }
