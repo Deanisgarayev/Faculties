@@ -1,3 +1,5 @@
+package model;
+
 public class Gryffindor extends Hogwarts {
     private int nobility;
     private int honor;
@@ -36,7 +38,7 @@ public class Gryffindor extends Hogwarts {
     }
 
     public String toString() {
-        return "Gryffindor " + super.toString() + " nobility " + nobility + " honor " + honor +
+        return "model.Gryffindor " + super.toString() + " nobility " + nobility + " honor " + honor +
                 " bravery " + bravery;
     }
 }
