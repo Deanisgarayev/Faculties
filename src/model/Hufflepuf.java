@@ -1,7 +1,10 @@
+package model;
+
 public class Hufflepuf extends Hogwarts {
     private int hardworking;
     private int loyalty;
     private int diligence;
+
     public Hufflepuf(String name, int conjurePoint, int transgressDistance, int hardworking, int loyalty, int diligence) {
         super(name, conjurePoint, transgressDistance);
         this.hardworking = hardworking;
@@ -36,7 +39,7 @@ public class Hufflepuf extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Hufflepuf " + super.toString() +
+        return "model.Hufflepuf " + super.toString() +
                 " hardworking " + hardworking +
                 " loyalty " + loyalty +
                 " diligence " + diligence;

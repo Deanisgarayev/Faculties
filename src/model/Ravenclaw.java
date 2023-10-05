@@ -1,16 +1,19 @@
+package model;
+
 public class Ravenclaw extends Hogwarts {
     private int smartness;
     private int wisdom;
     private int wit;
     private int creativity;
+
     public Ravenclaw(String name, int conjurePoint, int transgressDistance, int smartness, int wisdom, int wit,
                      int creativity) {
         super(name, conjurePoint, transgressDistance);
-            this.smartness = smartness;
-            this.wisdom = wisdom;
-            this.wit = wit;
-            this.creativity = creativity;
-        }
+        this.smartness = smartness;
+        this.wisdom = wisdom;
+        this.wit = wit;
+        this.creativity = creativity;
+    }
 
     public int getSmartness() {
         return smartness;
@@ -46,7 +49,7 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Ravenclaw " + super.toString() + " smartness " + smartness +
+        return "model.Ravenclaw " + super.toString() + " smartness " + smartness +
                 " wisdom " + wisdom +
                 " wit " + wit +
                 " creativity " + creativity;

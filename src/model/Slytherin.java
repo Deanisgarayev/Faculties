@@ -1,3 +1,5 @@
+package model;
+
 public class Slytherin extends Hogwarts {
     private int cunning;
     private int determination;
@@ -8,11 +10,11 @@ public class Slytherin extends Hogwarts {
     public Slytherin(String name, int conjurePoint, int transgressDistance, int cunning, int determination,
                      int ambition, int resourcefulness, int desireForPower) {
         super(name, conjurePoint, transgressDistance);
-            this.cunning = cunning;
-            this.determination = determination;
-            this.ambition = ambition;
-            this.resourcefulness = resourcefulness;
-            this.desireForPower = desireForPower;
+        this.cunning = cunning;
+        this.determination = determination;
+        this.ambition = ambition;
+        this.resourcefulness = resourcefulness;
+        this.desireForPower = desireForPower;
     }
 
     public int getCunning() {
@@ -57,7 +59,7 @@ public class Slytherin extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Slytherin " + super.toString() +
+        return "model.Slytherin " + super.toString() +
                 " cunning " + cunning +
                 " determination " + determination +
                 " ambition " + ambition +

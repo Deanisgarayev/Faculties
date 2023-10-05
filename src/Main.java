@@ -1,5 +1,11 @@
+import model.Gryffindor;
+import model.Hufflepuf;
+import model.Ravenclaw;
+import model.Slytherin;
+
 public class Main {
     public static void main(String[] args) {
+
         Gryffindor[] gryffindors = {
                 new Gryffindor("Harry Potter", 20, 20,
                         10, 10, 10),
@@ -33,22 +39,32 @@ public class Main {
                         3, 5, 2, 4, 5),
         };
         PrintService printService = new PrintService();
+//        print all gryffindors
         printService.print(gryffindors);
         printService.space();
+//        print all hufflepufs
         printService.print(hufflepufs);
         printService.space();
+//        print all ravenclaws
         printService.print(ravenclaws);
         printService.space();
+//        print all slytherins
         printService.print(slytherins);
-        PrintService gryffindorStudents = new PrintService();
-        gryffindorStudents.CompareGryffindors(gryffindors[0], gryffindors[1]);
-        PrintService hufflepufStudents = new PrintService();
-        hufflepufStudents.CompareHufflepufs(hufflepufs[0], hufflepufs[2]);
-        PrintService ravenclawStudents = new PrintService();
-        ravenclawStudents.CompareRavenclaws(ravenclaws[2], ravenclaws[1]);
-        PrintService slytherinStudents = new PrintService();
-        slytherinStudents.CompareSlytherins(slytherins[1], slytherins[2]);
-        PrintService allStudents = new PrintService();
-        allStudents.compareAnyStudents(gryffindors[0], slytherins[0]);
+        printService.space();
+//        compare two any gryffindors by points
+        printService.CompareGryffindors(gryffindors[0], gryffindors[1]);
+        printService.space();
+//        compare two any hufflepufs by points
+        printService.CompareHufflepufs(hufflepufs[0], hufflepufs[2]);
+        printService.space();
+//        compare two any ravenclaws by points
+        printService.CompareRavenclaws(ravenclaws[2], ravenclaws[1]);
+        printService.space();
+//        compare two any slytherins by points
+        printService.CompareSlytherins(slytherins[1], slytherins[2]);
+        printService.space();
+//        compare two any students by points
+        printService.compareAnyStudents(gryffindors[0], slytherins[0]);
     }
 }
+
